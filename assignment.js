@@ -10,6 +10,7 @@ function kilometerToMeter(kilometer){
     }
     return meter;
 }
+
 var meter = kilometerToMeter(2);
 console.log(meter);
 
@@ -35,7 +36,8 @@ var budget = budgetCalculator(1,2,3);
 console.log(budget);
 
 
-//hotelCost Problem Solution
+//hotelCost
+
 function hotelCost(day){
     var CostTotal = 0;  
     if(day <= 0 || day == null ){
@@ -56,6 +58,7 @@ function hotelCost(day){
     }
     return CostTotal;
 }
+
 var cost = hotelCost(10);
 console.log(cost);
 
@@ -75,6 +78,7 @@ function megaFriend(frindList){
     }
     return letterCount;
 }
+
 var friendList = ['abdullah','khokon','sobuj','tutul'];
 var result=(megaFriend(friendList));
 console.log(result);
