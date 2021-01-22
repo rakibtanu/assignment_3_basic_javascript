@@ -1,4 +1,7 @@
 
+//https://github.com/rakibtanu/assignment_3_basic_javascript
+
+
 // kilometer To Meter
 
 function kilometerToMeter(kilometer){
@@ -17,21 +20,19 @@ console.log(meter);
 
 // Budget calculator
 
-function budgetCalculator(tv,fridge,ac){
+function budgetCalculator(watch,mobile,laptop){
     var BudgetTotal = 0;
-    if( tv < 0 || fridge < 0 || ac < 0 ){
-        BudgetTotal =" Quntity can Not Be Nagetive ";
+    if( watch < 0 || mobile < 0 || laptop < 0 ){
+        BudgetTotal =" Quntity Can Not Be Nagetive ";
     }else{
-        var tvBudget  = tv * 50;
-        var fridgeBudget = fridge * 100;
-        var acBudget = ac * 500;
-        BudgetTotal  = tvBudget + fridgeBudget + acBudget;
+        var BudgetWatch  = watch * 50;
+        var BudgetMobile = mobile * 100;
+        var BudgetLaptop = laptop * 500;
+        BudgetTotal  = BudgetWatch + BudgetMobile + BudgetLaptop;
     }
     return BudgetTotal;
 }
-
-// Zero Quantity Allowed
-
+ 
 var budget = budgetCalculator(1,2,3);
 console.log(budget);
 
@@ -51,10 +52,10 @@ function hotelCost(day){
         CostTotal = cost + discountCost;    
     }else{
         var cost = 10*100;
-        var Cost2 = 10*80;
+        var CostTwo = 10*80;
         var discountDay = day - 20;
         var discountCost = discountDay*50;
-        CostTotal = cost + Cost2 +discountCost;   
+        CostTotal = cost + CostTwo +discountCost;   
     }
     return CostTotal;
 }
